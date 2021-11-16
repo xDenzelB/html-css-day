@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #be6c46, #ca9261);
+    z-index: -1;
+    
+    }
+
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    color:rgb(1, 107, 27);
+    align-items: center;
+}
+
+#logo{
+    grid-column: 2/3;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 10px;
+    border-color: black;
+    background: black;
+    text-align: center;
+}
+
+.hamburger{
+    height: 30px;
+    width: 30px;
+    justify-self: end;
+}
+
+section {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero {
+    height: 60%;
+    width: 100%;
+    
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.dream {
+    position: absolute;
+    top: 83%;
+    left: 5.5%;
+    font-size: 60px;
+    font-family: sans-serif;
+    transform: translate(-20%, -70%);
+    color:white;
+    z-index: 3;
+    
+}
+
+.hero::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+    top: 0;
+}
+
+.dream::after {
+    content: "";
+    background: linear-gradient(to left, rgb(4, 44, 14), rgb(0, 236, 35));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.2;
+    top: 0;
+}
+#logo::after {
+    content: "";
+    background: linear-gradient(to left, #be6c46, #ca9261);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.2;
+    top: 0;
+}
+
+
+
